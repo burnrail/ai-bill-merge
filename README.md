@@ -3,7 +3,7 @@
 Merge your OpenAI and Anthropic cost reports in one offline HTML file, and see the three places where a cheaper model would have saved the most (an estimate).
 
 - **What it is**: a single HTML file (`burnrail-preview.html`). Open it in a browser, choose the cost-report JSON files you downloaded from each provider, and it shows the combined total, the total per project or workspace, and the top 3 estimated savings.
-- **Private by design**: the file reads your JSON inside the browser and sends nothing anywhere. Its Content Security Policy is `default-src 'none'`, so it cannot make network requests. Project, key and workspace ids are masked by default.
+- **Private by design**: the file reads your JSON inside the browser and sends nothing anywhere. Its Content Security Policy (`default-src 'none'; form-action 'none'; base-uri 'none'`) blocks background requests such as fetch, XHR, images and fonts, and form submission. The only way out is the waitlist link at the bottom, which navigates only when you click it. Project, key and workspace ids are masked by default.
 - **Totals are the provider's numbers**: the combined total is the sum of what each provider reports. The price table is used only for the savings estimate.
 
 ## How to use
@@ -28,14 +28,14 @@ Merge your OpenAI and Anthropic cost reports in one offline HTML file, and see t
 
 ## Updates
 - Changes are listed in [CHANGELOG.md](CHANGELOG.md). A price-table update is a new release.
-- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.0)
+- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.1)
 
 ## 한국어
 
 OpenAI·Anthropic 비용 보고서를 오프라인 HTML 파일 하나에서 합치고, 더 싼 모델을 썼다면 가장 많이 아꼈을 곳 3개(추정)를 보여 줍니다.
 
 - **무엇인가**: HTML 파일 하나(`burnrail-preview.html`)입니다. 브라우저로 열고 공급사에서 내려받은 비용 보고서 JSON을 고르면, 합친 금액, 프로젝트·워크스페이스별 금액, 추정 절감이 큰 3곳을 보여 줍니다.
-- **내 컴퓨터에서만 읽음**: 파일은 브라우저 안에서만 읽히고 어디에도 보내지 않습니다. 콘텐츠 보안 정책이 `default-src 'none'`이라 네트워크 요청을 할 수 없습니다. 프로젝트·키·워크스페이스 id는 기본으로 가립니다.
+- **내 컴퓨터에서만 읽음**: 파일은 브라우저 안에서만 읽히고 어디에도 보내지 않습니다. 콘텐츠 보안 정책(`default-src 'none'; form-action 'none'; base-uri 'none'`)이 fetch·XHR·이미지·폰트 같은 백그라운드 요청과 폼 전송을 막습니다. 밖으로 나가는 길은 맨 아래 대기자 링크 하나이고, 누를 때만 이동합니다. 프로젝트·키·워크스페이스 id는 기본으로 가립니다.
 - **합계는 공급사가 청구한 금액**: 합계는 각 공급사가 보고한 금액을 더한 값입니다. 단가표는 절감 추정에만 씁니다.
 
 ### 쓰는 법
@@ -60,4 +60,4 @@ OpenAI·Anthropic 비용 보고서를 오프라인 HTML 파일 하나에서 합�
 
 ### 갱신
 - 변경 기록은 [CHANGELOG.md](CHANGELOG.md)에 있습니다. 단가표 갱신도 새 릴리스로 냅니다.
-- 연락: hello@burnrail.com · 소식: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.0)
+- 연락: hello@burnrail.com · 소식: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.1)
