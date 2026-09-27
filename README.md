@@ -28,7 +28,7 @@ Merge your OpenAI and Anthropic cost reports in one offline HTML file, and see t
 
 ## Updates
 - Changes are listed in [CHANGELOG.md](CHANGELOG.md). A price-table update is a new release.
-- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.1)
+- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.2)
 
 ## 한국어
 
@@ -60,4 +60,4 @@ OpenAI·Anthropic 비용 보고서를 오프라인 HTML 파일 하나에서 합�
 
 ### 갱신
 - 변경 기록은 [CHANGELOG.md](CHANGELOG.md)에 있습니다. 단가표 갱신도 새 릴리스로 냅니다.
-- 연락: hello@burnrail.com · 소식: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.1)
+- 연락: hello@burnrail.com · 소식: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.2)

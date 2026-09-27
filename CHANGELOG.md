@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.2 — 2026-09-27
+- The HTML file now starts with its own license line: `SPDX-License-Identifier: MIT`, Copyright (c) 2026 Burnrail.
+- The bundled LiteLLM price data keeps its MIT notice in the page footer and in THIRD_PARTY_NOTICES.md.
+- No change to how bills are read or totals are computed.
+
 ## v0.1.1 — 2026-09-27
 - Security: the Content Security Policy now also sets `form-action 'none'` and `base-uri 'none'`.
 - CI: the release workflow checks out with `persist-credentials: false`.
