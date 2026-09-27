@@ -1,0 +1,60 @@
+{
+ "data": [
+  {
+   "starting_at": "2025-10-01T00:00:00Z",
+   "ending_at": "2025-10-02T00:00:00Z",
+   "results": [
+    {
+     "amount": "2150.5",
+     "context_window": "0-200k",
+     "cost_type": "tokens",
+     "currency": "USD",
+     "description": "Claude Opus 4.5 Usage - Input Tokens",
+     "inference_geo": "not_available",
+     "model": "claude-opus-4-5",
+     "service_tier": "standard",
+     "token_type": "uncached_input_tokens",
+     "workspace_id": "wrkspc_example_1"
+    },
+    {
+     "amount": "5320.25",
+     "context_window": "0-200k",
+     "cost_type": "tokens",
+     "currency": "USD",
+     "description": "Claude Opus 4.5 Usage - Output Tokens",
+     "inference_geo": "not_available",
+     "model": "claude-opus-4-5",
+     "service_tier": "standard",
+     "token_type": "output_tokens",
+     "workspace_id": "wrkspc_example_1"
+    },
+    {
+     "amount": "123.78912",
+     "context_window": "0-200k",
+     "cost_type": "tokens",
+     "currency": "USD",
+     "description": "Claude Haiku 4.5 Usage - Cache Read",
+     "inference_geo": "not_available",
+     "model": "claude-haiku-4-5",
+     "service_tier": "standard",
+     "token_type": "cache_read_input_tokens",
+     "workspace_id": null
+    },
+    {
+     "amount": "40",
+     "context_window": null,
+     "cost_type": "web_search",
+     "currency": "USD",
+     "description": "Web Search Usage",
+     "inference_geo": null,
+     "model": null,
+     "service_tier": null,
+     "token_type": null,
+     "workspace_id": "wrkspc_example_2"
+    }
+   ]
+  }
+ ],
+ "has_more": false,
+ "next_page": null
+}

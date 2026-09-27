@@ -1,0 +1,19 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+      - name: Verify release file hash
+        run: cd dist && sha256sum -c burnrail-preview.html.sha256
+      - name: Create release
+        run: gh release create "$GITHUB_REF_NAME" dist/burnrail-preview.html dist/burnrail-preview.html.sha256 --title "$GITHUB_REF_NAME" --notes-file CHANGELOG.md --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}
