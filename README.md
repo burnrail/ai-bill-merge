@@ -19,6 +19,7 @@ Merge your OpenAI and Anthropic cost reports in one offline HTML file, and see t
 - **Totals**: summed exactly in integer micro-cents from the provider's reported amounts. When a KRW rate is entered, each row is rounded separately, so rows may differ from the total by about ₩1.
 - **Estimated savings**: for each large model, the tool shows the next cheaper model at the same provider and at the other provider, where both input and output token prices are lower. **Quality is not checked.** Test with your own data before switching.
 - **Model detection**: OpenAI's `line_item` is assumed to look like `"<model>, input"` / `"<model>, output"`. This format is not documented in the API spec. Rows that do not match are counted in the total as "unknown model". The report shows what share of spend it could attribute to a model.
+- **Early-access link (v0.2.0)**: below the waitlist link, the report shows one more link, "monthly automatic report and spend alerts — early access". The line next to it says the feature **does not exist yet, its price is under consideration, and nothing is sold or charged**. Each time the file opens, it picks one example monthly price (USD 29, 79 or 199) with a local random number and adds it to the link as `utm_content=paid-<price>`, so we can count which example price people click. Picking the price makes no network request; the link, like the waitlist link, navigates only when clicked.
 - **Scope**: OpenAI and Anthropic cost-report JSON only. Other providers, CSV exports and usage (token) endpoints are not read. The interface text is in Korean in v0.1.0.
 
 ## Data sources and licenses
@@ -32,7 +33,7 @@ Merge your OpenAI and Anthropic cost reports in one offline HTML file, and see t
 
 ## Updates
 - Changes are listed in [CHANGELOG.md](CHANGELOG.md). A price-table update is a new release.
-- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.3)
+- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.2.0)
 
 ## 한국어
 
@@ -55,6 +56,7 @@ OpenAI·Anthropic 비용 보고서를 오프라인 HTML 파일 하나에서 합�
 - **합계**: 공급사가 보고한 금액을 정수(마이크로센트)로 정확히 더합니다. 원화 환율을 넣으면 줄마다 반올림하므로 줄의 합이 합계와 1원쯤 다를 수 있습니다.
 - **추정 절감**: 금액이 큰 모델마다, 같은 공급사와 다른 공급사에서 입력·출력 단가가 둘 다 싼 한 단계 아래 모델을 보여 줍니다. **품질은 검증하지 않았습니다.** 바꾸기 전에 자기 데이터로 확인하세요.
 - **모델 알아내기**: OpenAI의 `line_item`이 `"<모델>, input"`·`"<모델>, output"` 꼴이라고 가정합니다. API 스펙에 적힌 형식이 아닙니다. 이 꼴이 아닌 줄은 "모델 미상"으로 합계에만 넣고, 모델을 알아낸 금액 비율을 화면에 표시합니다.
+- **조기 신청 링크(v0.2.0)**: 대기자 링크 아래에 "월간 자동 리포트·지출 알림 — 조기 신청" 링크가 하나 더 있습니다. 바로 옆 문구에 이 기능은 **아직 없고, 가격은 검토 중이며, 지금 결제·판매는 없다**고 적혀 있습니다. 파일을 열 때마다 예시 월 가격(29·79·199달러) 하나를 로컬 난수로 고르고, 링크에 `utm_content=paid-<가격>`으로 붙여 어떤 예시 가격에서 누르는지 셉니다. 가격 고르기는 네트워크 요청을 하지 않고, 링크는 대기자 링크처럼 누를 때만 이동합니다.
 - **범위**: OpenAI·Anthropic 비용 보고서 JSON만 읽습니다. 다른 공급사, CSV, 사용량(토큰) 엔드포인트는 읽지 않습니다. v0.1.0의 화면 문구는 한국어입니다.
 
 ### 자료 출처와 라이선스

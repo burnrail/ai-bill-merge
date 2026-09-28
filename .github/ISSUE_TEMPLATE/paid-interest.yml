@@ -1,7 +1,7 @@
 name: What should come next?
 description: Tell us which next feature matters, and optionally your spend and price ranges.
 title: "[next] "
-labels: ["question"]
+labels: ["topic:next"]
 body:
   - type: markdown
     attributes:

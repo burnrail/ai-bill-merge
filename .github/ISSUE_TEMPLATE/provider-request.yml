@@ -1,7 +1,7 @@
 name: Provider or format request
 description: Ask for another provider or file format to be read.
 title: "[provider] "
-labels: ["enhancement"]
+labels: ["topic:provider"]
 body:
   - type: markdown
     attributes:

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.0 — 2026-09-28
+- New in `burnrail-preview.html`: an early-access link for "monthly automatic report and spend alerts". The note right next to it says the feature does not exist yet, the price is under consideration, and nothing is sold or charged. The file picks one example price (USD 29, 79 or 199) locally each time it opens and adds `utm_content=paid-<price>` to the link. No network request; the link navigates only when clicked.
+- The waitlist link's `utm_campaign` is now `ai-bill-merge-v0.2.0` (release version).
+- The Content Security Policy is unchanged. Totals, savings estimates and the price table are unchanged.
+- Issue-form labels are now `topic:provider`, `topic:next` and `topic:bug`; the release workflow creates them.
+
 ## v0.1.3 — 2026-09-28
 - Issue forms: provider or format request, "what should come next" (optional spend and price ranges), bug report. Every form asks not to paste company names, account or key ids, or any part of a real bill.
 - README: a "Requests and feedback" section.
