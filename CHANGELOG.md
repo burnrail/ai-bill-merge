@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.3 — 2026-09-28
+- Issue forms: provider or format request, "what should come next" (optional spend and price ranges), bug report. Every form asks not to paste company names, account or key ids, or any part of a real bill.
+- README: a "Requests and feedback" section.
+- `burnrail-preview.html` is unchanged (same file and SHA-256 as v0.1.2).
+
 ## v0.1.2 — 2026-09-27
 - The HTML file now starts with its own license line: `SPDX-License-Identifier: MIT`, Copyright (c) 2026 Burnrail.
 - The bundled LiteLLM price data keeps its MIT notice in the page footer and in THIRD_PARTY_NOTICES.md.

@@ -1,0 +1,35 @@
+name: Provider or format request
+description: Ask for another provider or file format to be read.
+title: "[provider] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This is a public issue. Do not paste company names, account or key ids, or any part of a real bill or cost report.** / 공개 이슈입니다. 회사명·계정·키 id·청구서 원문(일부 포함)을 붙이지 마세요.
+        Requests are counted to decide what to support next. There is no promise of a reply or schedule. / 요청은 다음 지원 대상을 정하는 데 집계하며, 응답·일정을 약속하지 않습니다.
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider / 공급사
+      options:
+        - Google Gemini / Vertex AI
+        - Azure OpenAI
+        - AWS Bedrock
+        - Mistral
+        - A Korean provider / 한국 공급사
+        - Other / 기타
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: File type / 파일 형식
+      options:
+        - Cost API JSON / 비용 API JSON
+        - Usage (token) API JSON / 사용량(토큰) API JSON
+        - CSV export from the console / 콘솔 CSV 내보내기
+        - Invoice PDF / 청구서 PDF
+        - Other / 기타
+    validations:
+      required: true

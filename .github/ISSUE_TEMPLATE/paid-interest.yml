@@ -1,0 +1,44 @@
+name: What should come next?
+description: Tell us which next feature matters, and optionally your spend and price ranges.
+title: "[next] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This is a public issue. Do not paste company names, account or key ids, or any part of a real bill or cost report.** / 공개 이슈입니다. 회사명·계정·키 id·청구서 원문(일부 포함)을 붙이지 마세요.
+        All range questions are optional. These features do not exist yet and nothing is for sale here; answers are counted to decide what to build. / 범위 질문은 모두 선택입니다. 아래 기능은 아직 없고 판매하지 않습니다. 답은 무엇을 만들지 정하는 데 집계합니다.
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Which next feature would matter to you? / 어떤 다음 기능이 필요한가요?
+      options:
+        - label: Automatic monthly import (no manual download) / 매달 자동 가져오기
+        - label: Spend alerts / 지출 알림
+        - label: Split cost by team or feature / 팀·기능별 비용 나누기
+        - label: Check quality before switching models / 모델 바꾸기 전 품질 검증
+  - type: dropdown
+    id: spend
+    attributes:
+      label: Monthly LLM spend, range (optional) / 월 LLM 지출 구간(선택)
+      options:
+        - Prefer not to say / 밝히지 않음
+        - Under USD 1k / 1천 달러 미만
+        - USD 1k–10k / 1천~1만 달러
+        - USD 10k–50k / 1만~5만 달러
+        - Over USD 50k / 5만 달러 이상
+    validations:
+      required: false
+  - type: dropdown
+    id: price
+    attributes:
+      label: For the features you checked, what monthly price would feel fair? (optional) / 고른 기능에 월 얼마가 적당한가요?(선택)
+      options:
+        - Prefer not to say / 밝히지 않음
+        - Free only / 무료만
+        - Under USD 20 / 20달러 미만
+        - USD 20–100 / 20~100달러
+        - USD 100–500 / 100~500달러
+        - Over USD 500 / 500달러 이상
+    validations:
+      required: false

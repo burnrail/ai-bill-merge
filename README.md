@@ -26,9 +26,13 @@ Merge your OpenAI and Anthropic cost reports in one offline HTML file, and see t
 - Model prices: LiteLLM price table at a pinned commit, MIT. Details and the full license text are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - Example files in `examples/provider/` are made up. They are not real customer data.
 
+## Requests and feedback
+- Want another provider or file type, or a feature after merging? Open an issue with the [provider request](../../issues/new?template=provider-request.yml) or [what should come next](../../issues/new?template=paid-interest.yml) form. Spend and price questions are optional ranges. Nothing is for sale; answers are counted to decide what to build. There is no promise of a reply or schedule.
+- Issues are public. **Do not paste company names, account or key ids, or any part of a real bill or cost report.**
+
 ## Updates
 - Changes are listed in [CHANGELOG.md](CHANGELOG.md). A price-table update is a new release.
-- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.2)
+- Contact: hello@burnrail.com · Updates: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.3)
 
 ## 한국어
 
@@ -58,6 +62,10 @@ OpenAI·Anthropic 비용 보고서를 오프라인 HTML 파일 하나에서 합�
 - 모델 단가: 커밋 고정된 LiteLLM 단가표, MIT. 자세한 출처와 라이선스 전문은 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다.
 - `examples/provider/`의 예시 파일은 지어낸 값입니다. 실제 고객 데이터가 아닙니다.
 
+### 요청과 의견
+- 다른 공급사·파일 형식이나 합산 다음 기능을 원하면 [공급사 요청](../../issues/new?template=provider-request.yml) 또는 [다음에 필요한 것](../../issues/new?template=paid-interest.yml) 양식으로 이슈를 남겨 주세요. 지출·가격 질문은 선택 범위입니다. 판매하는 것은 없고, 답은 무엇을 만들지 정하는 데 집계합니다. 응답·일정은 약속하지 않습니다.
+- 이슈는 공개됩니다. **회사명·계정·키 id·청구서 원문(일부 포함)을 붙이지 마세요.**
+
 ### 갱신
 - 변경 기록은 [CHANGELOG.md](CHANGELOG.md)에 있습니다. 단가표 갱신도 새 릴리스로 냅니다.
-- 연락: hello@burnrail.com · 소식: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.2)
+- 연락: hello@burnrail.com · 소식: [burnrail.com](https://burnrail.com/?utm_source=gh-release&utm_medium=tool&utm_campaign=ai-bill-merge-v0.1.3)

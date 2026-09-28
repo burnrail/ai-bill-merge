@@ -1,0 +1,13 @@
+name: Bug report
+description: Something is read or totalled wrongly.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "**This is a public issue. Do not paste company names, account or key ids, or any part of a real bill or cost report.** / 공개 이슈입니다. 회사명·계정·키 id·청구서 원문(일부 포함)을 붙이지 마세요. Use the fake files in examples/provider/ or a made-up file to show the problem. / examples/provider/의 가짜 파일이나 지어낸 파일로 문제를 보여 주세요."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened and what you expected / 무슨 일이 있었고 무엇을 기대했나요
+    validations:
+      required: true
